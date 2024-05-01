@@ -1,0 +1,88 @@
+h1{
+	font-family: headingfont;
+	text-align: center;
+}
+h2{
+	font-family: bodyheading;
+	text-align: center;
+
+}
+p{
+	font-family: bodyfont;
+	margin: 1%;
+	
+}
+.title{	
+	padding-top: 3%;
+	color: white;
+	font-size: 400%;
+}
+li{
+	font-family: bodyfont;
+	padding-left: 2%;
+}
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .navbar li {
+	float: left;
+	border-right: 1px solid #bbb;
+	padding-left: 5%;
+	padding-right: 5%;
+  }
+  .navbar li:last-child {
+	border-right: none;
+  }
+  .navbar li a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: bodyfont;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li :hover {
+	background-color: #3c4ea1;
+  }
+  .active {
+	background-color: #ffffff;
+  }
+  .navbar .active a{
+	color: black;
+  }
+ .homescreen{
+	background-image: url('assets/images/homescreen.jpg');
+	padding-top: 4%;
+	padding-bottom: 4%;
+  }
+body{
+	background-color: #929292;
+	margin: 0;
+}
+
+@font-face {
+	font-family: headingfont;
+	src: url(assets/fonts/HatschSans_PERSONAL_USE_ONLY.woff);
+  }
+	@font-face {
+		font-family: bodyfont;
+		src: url(assets/fonts/ParagraphFont.woff);
+  }
+  @font-face {
+	font-family: semibody;
+	src: url(assets/fonts/semibody.woff);
+}
+@font-face {
+	font-family: bodyheading;
+	src: url(assets/fonts/BodyHeadingFont.woff);
+}
