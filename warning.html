@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My HTML Document</title>
+    <link rel="stylesheet" href="warningstyle.css">
+</head>
+<body>
+ <!--   <h1><b>WARNING</b></h1>
+    <p>The following page has a demonstation where we </p>
+    <div class="container">
+    <button id="yesButton">Yes, I want to continue</button>
+<button id="noButton">No, take me off the page</button>
+</div> -->
+
+<div class="card">
+
+    <div class="card__content">
+      <h1>WARNING</h1>
+      <span class="card__title">The following page will display and will access your IP address<span>
+        <p>No information is collected or sent anywhere, all happens on your local machine.</p>
+        <div class="container">
+            <button id="yesButton" class="yesbutton">Yes, I want to continue</button>
+        <button id="noButton" class="nobutton">No, take me off the page</button>
+        </div>
+
+    </div>
+  </div>
+
+
+<script>
+    document.getElementById('yesButton').onclick = function() {
+        window.location.href = 'demo.html';
+    }
+
+    document.getElementById('noButton').onclick = function() {
+        window.location.href = 'https://google.com';
+    }
+</script>
+</body>
+</html>
