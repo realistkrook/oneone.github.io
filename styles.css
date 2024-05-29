@@ -77,6 +77,13 @@ li{
 	padding-top: 4%;
 	padding-bottom: 4%;
 }
+.homescreen2{
+	background-image: url('assets/images/homescreen2.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
 
 body {
 	background-color: #f2f2f2;

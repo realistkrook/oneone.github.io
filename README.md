@@ -4,8 +4,7 @@ Assessment for TDE
 
 ## Navivgation
 
-Navigation will not work if viewed through zip file, unless added to include extensions.
-(e.g. you will not be able to navigate through the website unless you edit the HTML files to include the .html tag in the head tags, this is so navigation happens cleaner in the published website)
+Navigation has been editted so it does work in both file format and hosting format.
 
 ## Published website
 
