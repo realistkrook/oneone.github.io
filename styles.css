@@ -255,18 +255,50 @@ article {
   }
   .infodiv {
 	padding: 20px;
-	background-color: #dfdfdf; /* Light grey */
-	border-radius: 5px; /* Rounded corners */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+	background-color: #dfdfdf; 
+	border-radius: 5px; 
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 	margin: 1%;
 	position: relative;
 
 }
 .passwordimg {
-    height: 10vh; /* Make the image div 10% as tall as the .infodiv element */
+    height: 20vh; 
     background-image: url('assets/images/password.jpg');
     background-repeat: no-repeat;
-    background-size: cover; /* This will make the image as large as possible while still being completely visible within the image div */
-    background-position: center; /* This will center the image within the image div */
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+}
+.updateimg {
+    height: 20vh; 
+    background-image: url('assets/images/update.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+}
+.clickimg {
+    height: 20vh; 
+    background-image: url('assets/images/click.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+}
+.twofaimg {
+    height: 20vh; 
+    background-image: url('assets/images/2FA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+}
+.bodyguardimg {
+    height: 20vh; 
+    background-image: url('assets/images/bodyguard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
     border-radius: 5px;
 }
