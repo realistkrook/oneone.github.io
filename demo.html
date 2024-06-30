@@ -41,20 +41,20 @@
     <div class="infodiv">
         <h2>What this website knows about you:</h2>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $.getJSON('https://api.ipify.org?format=json', function(data){
-            $.getJSON('http://ip-api.com/json/' + data.ip, function(location){
-                $('#ip').text('Your IP address is: ' + data.ip);
-                $('#location').text('Your approximate location is: ' + location.city + ', ' + location.regionName + ', ' + location.country);
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $.getJSON('https://api.ipify.org?format=json', function(data){
+                $.getJSON('https://ip-api.com/json/' + data.ip, function(location){
+                    $('#ip').text('Your IP address is: ' + data.ip);
+                    $('#location').text('Your approximate location is: ' + location.city + ', ' + location.regionName + ', ' + location.country);
+                });
             });
         });
-    });
-    </script>
-    
-    <p id="ip"></p>
-    <p id="location"></p>
+        </script>
+        
+        <p id="ip"></p>
+        <p id="location"></p>
     <p>Now the approximate location may not be exactly, however hackers can link your IP Address to data breaches, and therefore get your password if you reuse passwords.</p>
     </div><footer>
         <p>&copy; 2024 realistkrook </p>
