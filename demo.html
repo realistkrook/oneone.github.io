@@ -43,13 +43,13 @@
     
         <p id="user-info"></p>
         <script>
-          // Replace 'YOUR_API_KEY' with your actual API key (if needed)
+
           const apiKey = '812da59f6c99c0e1'; 
       
           const getUserInfo = async () => {
             try {
               const baseUrl = 'https://ipapi.co/json/';
-              const url = apiKey ? `${baseUrl}?apiKey=${apiKey}` : baseUrl; // Add API key if provided
+              const url = apiKey ? `${baseUrl}?apiKey=${apiKey}` : baseUrl;
       
               const response = await fetch(url);
               const data = await response.json();
