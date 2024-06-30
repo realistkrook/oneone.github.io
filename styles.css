@@ -12,6 +12,14 @@ p{
 	margin: 1%;
 	
 }
+
+nav{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+	}
+
 .title{	
 	padding-top: 3%;
 	color: white;
