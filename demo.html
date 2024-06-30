@@ -41,20 +41,32 @@
     <div class="infodiv">
         <h2>What this website knows about you:</h2>
     
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <p id="user-info"></p>
         <script>
-        $(document).ready(function(){
-            $.getJSON('https://api.ipify.org?format=json', function(data){
-                $.getJSON('https://ip-api.com/json/' + data.ip, function(location){
-                    $('#ip').text('Your IP address is: ' + data.ip);
-                    $('#location').text('Your approximate location is: ' + location.city + ', ' + location.regionName + ', ' + location.country);
-                });
-            });
-        });
+          // Replace 'YOUR_API_KEY' with your actual API key (if needed)
+          const apiKey = '812da59f6c99c0e1'; 
+      
+          const getUserInfo = async () => {
+            try {
+              const baseUrl = 'https://ipapi.co/json/';
+              const url = apiKey ? `${baseUrl}?apiKey=${apiKey}` : baseUrl; // Add API key if provided
+      
+              const response = await fetch(url);
+              const data = await response.json();
+              const ip = data.ip;
+              const city = data.city;
+              const country = data.country_name;
+      
+              const userInfo = `Your IP address is: ${ip}.<br> Your approximate location is: ${city}, ${country}`;
+              document.getElementById('user-info').innerHTML = userInfo;
+            } catch (error) {
+              console.error('Error fetching user info:', error);
+              document.getElementById('user-info').innerHTML = 'Error retrieving information.';
+            }
+          };
+      
+          getUserInfo();
         </script>
-        
-        <p id="ip"></p>
-        <p id="location"></p>
     <p>Now the approximate location may not be exactly, however hackers can link your IP Address to data breaches, and therefore get your password if you reuse passwords.</p>
     </div><footer>
         <p>&copy; 2024 realistkrook </p>
